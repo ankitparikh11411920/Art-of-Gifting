@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".AdBannerActivity">
+
+    <include android:id="@+id/admin_toolbar_createad"
+        layout="@layout/admin_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:fadeScrollbars="true"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="8dp"
+                android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/admin_showads_recyclerview_adbanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:itemCount="3"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/createadinstruction"
+                    android:layout_marginTop="8dp"
+                    android:textSize="18sp"
+                    android:padding="8dp"
+                    android:textColor="@color/colorBlack"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorBlack"/>
+
+                <ImageView
+                    android:id="@+id/admin_img_create_ad"
+                    android:layout_width="match_parent"
+                    android:layout_height="172dp"
+                    android:scaleType="fitCenter"
+                    android:backgroundTint="@color/colorwhite"
+                    android:layout_marginTop="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_add_a_photo"/>
+
+                <Button
+                    android:id="@+id/admin_btn_upload_ad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:visibility="invisible"
+                    android:textColor="@color/colorwhite"
+                    android:background="@drawable/round_button"
+                    android:text="@string/Upload"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

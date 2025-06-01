@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Upload_Image">
+
+    <include
+        android:id="@+id/user_uploadimage_actionbar"
+        layout="@layout/user_toolbar" />
+
+    <TextView
+        android:id="@+id/user_tv_addphoto_insertimg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add your photo \n Click on photo to select Image"
+        android:layout_above="@id/user_upload_image_insertimg"
+        android:textSize="22sp"
+        android:textAlignment="center"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_upload_image_insertimg"
+        android:layout_width="136dp"
+        android:layout_height="136dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ic_add_a_photo"/>
+
+    <Button
+        android:id="@+id/user_btn_next_insertimg"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/user_upload_image_insertimg"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/colorWhite"
+        android:layout_height="wrap_content"
+        android:text="Next"/>
+
+    <Button
+        android:id="@+id/user_btn_skip_insertimg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:text="Skip"
+        android:background="#fff"
+        android:textAllCaps="false"
+        />
+
+</RelativeLayout>

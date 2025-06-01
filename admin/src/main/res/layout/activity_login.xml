@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#5B6EE4"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/admin_username"
+        android:layout_width="match_parent"
+        android:backgroundTint="#000"
+        android:hint="Username"
+        android:paddingStart="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_marginHorizontal="40dp"
+        android:textColorHint="@color/colorAccent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/admin_password"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_marginHorizontal="40dp"
+        android:hint="Password"
+        android:paddingStart="20dp"
+        android:padding="10dp"
+        android:textColorHint="@color/colorAccent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/admin_btnlogin"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@android:color/black"/>
+    <Button
+        android:id="@+id/admin_btnregister"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="@android:color/black"/>
+
+
+</LinearLayout>
+

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLight"
+    android:fillViewport="true"
+    tools:context=".OrderActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/user_toolbar"
+            android:id="@+id/user_order_toolbar"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/user_recycler_order_order_activity"
+            android:layout_width="match_parent"
+            android:layout_margin="8dp"
+            android:nestedScrollingEnabled="false"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="8dp"
+            android:padding="4dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="22sp"
+                android:text="Select Delivery Address"/>
+            <TextView
+                android:id="@+id/user_tv_address_order_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:padding="2dp"
+                android:textSize="18sp"
+                android:layout_marginBottom="4dp"
+                android:lines="3"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginVertical="4dp"
+                android:id="@+id/user_btn_change_address_order_activity"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorwhite"
+                android:background="@drawable/btnviewall"
+                android:text="Change Address"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginVertical="4dp"
+                android:id="@+id/user_btn_edit_address_order_activity"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnviewall"
+                android:textColor="@color/colorwhite"
+                android:text="Edit Address"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp"
+                android:orientation="horizontal"
+                android:padding="4dp"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Total : "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/user_tv_total_order_activity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="400"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp"
+                android:padding="4dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Delivery Fee : "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/user_tv_delivery_fee_order_activity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="₹ 40.00"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBlack" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:padding="8dp"
+                    android:text="Grand Total : "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:id="@+id/user_tv_grand_total_order_activity"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="400"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/user_btn_confirmorder_order_activity"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btnviewall"
+            android:layout_margin="16dp"
+            android:text="Confirm Order"
+            android:textColor="@color/colorWhite"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

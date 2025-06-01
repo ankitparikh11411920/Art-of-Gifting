@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/border"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:weightSum="5">
+
+        <ImageView
+            android:id="@+id/admin_prod_image_review_item"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@color/colorAccent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/admin_tv_prod_name_review_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/textcolor"
+                android:textSize="16sp"
+                android:paddingLeft="17dp"
+                android:text="Name" />
+
+            <TextView
+                android:id="@+id/admin_tv_prod_price_review_item"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/textcolor"
+                android:paddingLeft="17dp"
+                android:text="Price" />
+            <TextView
+                android:id="@+id/admin_tv_prod_qty_review_item"
+                android:textColor="?attr/textcolor"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="17dp"
+                android:text="Qty" />
+
+            <TextView
+                android:id="@+id/admin_tv_totalreview_review_item"
+                android:textColor="?attr/textcolor"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="17dp"
+                android:text="Total Reviews" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

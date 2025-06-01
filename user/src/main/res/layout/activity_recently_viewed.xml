@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLight"
+    tools:context=".RecentlyViewedActivity">
+
+    <include layout="@layout/user_toolbar"
+        android:id="@+id/user_recentlyviewed_toolbar" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/user_recyclerview_recentproducts_RecentlyViewed"
+        android:padding="4dp"
+        android:layout_height="match_parent"/>
+</LinearLayout>

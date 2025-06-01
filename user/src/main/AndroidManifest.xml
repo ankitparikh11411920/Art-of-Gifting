@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.artofgifting">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/appicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:requestLegacyExternalStorage="true"
+        tools:targetApi="q">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".OrderActivity" />
+        <activity android:name=".ViewAllSubCatActivity" />
+        <activity android:name=".RecentlyViewedActivity" />
+        <activity android:name=".AddressActivity" />
+        <activity android:name=".FamilyDetailsActivity" />
+        <activity android:name=".UserProfileActivity" />
+        <activity android:name=".ProductsActivity" />
+        <activity
+            android:name=".InternetConnectionActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"></activity>
+        <activity
+            android:name=".NotificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Enter_register_data"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".otpRegister"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Phoneauth"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Otp" />
+        <activity
+            android:name=".Upload_Image"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".CartActivity" />
+        <activity
+            android:name=".SelectedProductActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SearchlistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Fragment.Home"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".Notify.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".Notify.MyFirebaseIdService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

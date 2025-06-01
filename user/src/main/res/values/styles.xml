@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="exampletoast">
+        <item name="colorBackground">@color/colorBlack </item>
+        <item name="textColor">@color/colorWhite</item>
+        <!--        <item name="iconLeft">@drawable/ic_emoji</item>-->
+        <item name="strokeColor">@color/colorWhite</item>
+        <item name="strokeWidth">0.7dp</item>
+        <item name="length">SHORT</item>
+        <item name="cornerRadius">3dp</item>
+    </style>
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/colorGrey</item>
+        <item name="colorControlActivated">@color/colorDarkYellow</item>
+
+    </style>
+
+</resources>

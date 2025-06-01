@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    tools:context=".UserProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/admin_userprofile_toolbar"
+            layout="@layout/admin_toolbar" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="96dp"
+            android:id="@+id/admin_circleimage_user_image_userprofile"
+            android:src="@color/colorBlack"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="96dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginVertical="4dp"
+            android:padding="8dp"
+            android:weightSum="5"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:text="Name : "
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlack"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="0dp"
+                android:id="@+id/admin_tv_user_name_userprofile"
+                android:layout_weight="4"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlack"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:padding="8dp"
+            android:layout_marginVertical="4dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:text="Contact : "
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlack"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:textSize="16sp"
+                android:id="@+id/admin_tv_user_contact_userprofile"
+                android:textColor="@color/colorBlack"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:padding="8dp"
+            android:layout_marginVertical="4dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:text="Address : "
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlack"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:id="@+id/admin_tv_user_address_userprofile"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlack"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:padding="8dp"
+            android:layout_marginVertical="4dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:text="DOB : "
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlack"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:id="@+id/admin_tv_user_dob_userprofile"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlack"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Orders by this User : "
+            android:textColor="@color/colorBlack"
+            android:paddingLeft="8dp"
+            android:layout_marginTop="6dp"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/admin_recycler_orders_userprofile"
+                android:layout_width="match_parent"
+                android:nestedScrollingEnabled="false"
+                android:layout_marginTop="4dp"
+                android:padding="8dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/admin_tv_orders_userprofile"
+                android:layout_width="match_parent"
+                android:text="NO ORDERS"
+                android:textSize="32sp"
+                android:textColor="@color/colorBlack"
+                android:gravity="center"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

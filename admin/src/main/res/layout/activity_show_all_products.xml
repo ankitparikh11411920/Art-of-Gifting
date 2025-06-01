@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/admin_toolbar"
+        android:id="@+id/admin_showallproducts_toolbar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/admin_showallproducts_toolbar"
+        android:id="@+id/admin_allproducts_recyclerview_showallproductsactivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/admin_floating_add_product"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="26dp"
+        android:backgroundTint="?attr/tintcolor"
+        android:src="@drawable/ic_add"
+        android:tint="@android:color/white" />
+
+    <ProgressBar
+        android:id="@+id/admin_product_display_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

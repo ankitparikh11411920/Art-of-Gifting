@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryLight"
+    android:padding="32dp"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:text="Placing Order..."/>
+
+    <ProgressBar
+        android:id="@+id/progressBarLoadingRecite"
+        android:indeterminateDrawable="@drawable/custom_progressbar"
+        android:minHeight="10dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_marginTop="20dp"
+        android:progressTint="@color/colorGreen"
+        android:indeterminate="true"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateOnly="false"
+        android:maxHeight="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/user_progress_dialog_cancel"
+        android:text="Cancel"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/btnviewall"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
