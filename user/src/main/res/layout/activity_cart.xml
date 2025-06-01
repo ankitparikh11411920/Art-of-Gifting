@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:background="@color/colorwhite"
+            android:layout_height="match_parent">
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="match_parent"
+                android:id="@+id/user_gif_empty_cart_cart_activity"
+                android:visibility="gone"
+                android:src="@drawable/empty_cart"
+                android:layout_height="400dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".CartActivity">
+
+
+            <include
+                android:id="@+id/cart_toolbar"
+                layout="@layout/user_toolbar" />
+
+            <LinearLayout
+                android:id="@+id/user_linear_total_amount_cart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:elevation="3dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/user_tv_total_amount_cart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="8dp"
+                    android:text=""
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/user_btn_place_order_cart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/btn_shape_cart_place_order"
+                    android:text="Place Order"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <View
+                android:id="@+id/user_view_first_cart_activity"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="2dp"
+                android:layout_marginVertical="4dp"
+                android:background="@color/colorPrimaryLight" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/user_recycler_cart_cart_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+
+            <View
+                android:id="@+id/user_view_second_cart_activity"
+                android:layout_marginVertical="8dp"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimaryLight" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

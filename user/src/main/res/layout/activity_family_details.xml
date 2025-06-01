@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context=".FamilyDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryLight"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/user_familydetails_toolbar"
+            layout="@layout/user_toolbar" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="@drawable/my_family" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/user_edt_Name_family_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="16dp"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_person"
+                android:drawablePadding="8dp"
+                android:hint="Name"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/user_radiogroup_family_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_person"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/user_radiobtn_male_family_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/user_radiobtn_female_family_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="Female" />
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/user_edt_birthdate_family_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="8dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_cake"
+            android:drawablePadding="8dp"
+            android:hint="Birthdate"
+            android:inputType="date"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/user_edt_anniversary_family_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="8dp"
+            android:drawableLeft="@drawable/heart3"
+            android:drawablePadding="8dp"
+            android:hint="Anniversary"
+            android:inputType="date"
+            android:singleLine="true" />
+
+
+        <AutoCompleteTextView
+            android:id="@+id/user_edt_relationship_family_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="8dp"
+            android:drawableLeft="@drawable/rel3"
+            android:drawablePadding="8dp"
+            android:hint="Relationship"
+            android:singleLine="true" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/user_edt_address_family_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="8dp"
+
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="8dp"
+                android:hint="Address"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/user_btn_submit_family_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="16dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Submit"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+</ScrollView>

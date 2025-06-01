@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:paddingHorizontal="2dp"
+    android:layout_height="wrap_content">
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/user_shimmer_raw_prod_item_disp_horizontal"
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="10"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="0dp"
+                android:background="@drawable/shimmerback"
+                android:layout_weight="3"
+                android:layout_height="112dp"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_marginStart="8dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_margin="4dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/shimmerback"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_margin="4dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/shimmerback"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_margin="4dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/shimmerback"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:padding="16dp"
+            android:paddingHorizontal="2dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <ImageView
+                android:id="@+id/user_imageview_prod_disp_order_item"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="4dp"
+                android:layout_weight="3" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_weight="7"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/user_tv_prod_name_order_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:padding="4dp"
+                    android:textSize="22sp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/user_tv_prod_price_order_item"
+                    android:textSize="22sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/user_tv_prod_qty_order_item"
+                    android:textSize="22sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textColor="@color/colorBlack" />
+
+            </LinearLayout>
+        </LinearLayout>    
+    </RelativeLayout>

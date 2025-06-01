@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:paddingHorizontal="32dp"
+    android:paddingVertical="12dp"
+    android:layout_height="wrap_content">
+    <com.agrawalsuneet.dotsloader.loaders.AllianceLoader
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        app:alliance_animDuration="500"
+        android:layout_gravity="center"
+        app:alliance_distanceMultiplier="3"
+        app:alliance_dotsRadius="10dp"
+        app:alliance_drawOnlyStroke="true"
+        app:alliance_firstDotsColor="@color/colorRed"
+        app:alliance_secondDotsColor="@color/colorYellow"
+        app:alliance_strokeWidth="4dp"
+        app:alliance_thirdDotsColor="@color/colorGreen" />
+
+    <TextView
+        android:id="@+id/user_progress_dialog_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_marginStart="16dp"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/colorBlack"
+        android:textSize="22sp"/>
+
+</LinearLayout>

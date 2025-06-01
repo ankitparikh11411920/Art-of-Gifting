@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".AddSubCategoryActivity">
+
+    <include layout="@layout/admin_toolbar"
+        android:id="@+id/admin_addsubcategory_toolbar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:id="@+id/admin_spinner_category_name_add_subcategory"
+            android:layout_width="match_parent"
+            android:spinnerMode="dropdown"
+            android:padding="4dp"
+            android:layout_marginHorizontal="8dp"
+            android:background="@drawable/custom_spinner"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/admin_edt_sub_category_name_add_subcategory"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            app:errorEnabled="true">
+
+            <AutoCompleteTextView
+                android:id="@+id/admin_actv_subcatname_addsub_category"
+                android:hint="Sub-Category Name"
+                android:enabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <!--<com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Sub-Category Name"
+                android:drawablePadding="8dp"
+                android:inputType="text" />-->
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:id="@+id/textpickimage_addnew_subcategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Pick a image for Sub-Category"
+            android:textSize="14sp"
+            android:textColor="@color/colorBlack"
+            android:textAlignment="center"/>
+
+        <ImageView
+            android:id="@+id/admin_img_subcat_image_addnew_subcategory"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_add_a_photo"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal"/>
+        <Button
+            android:id="@+id/admin_btn_submit_addnew_subcategory"
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/colorwhite"
+            android:text="Submit"
+            android:background="@drawable/round_button"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

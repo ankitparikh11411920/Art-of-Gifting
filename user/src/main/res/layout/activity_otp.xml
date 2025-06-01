@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Otp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@drawable/main"/>
+
+    <EditText
+        android:id="@+id/user_edt_code_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="VERIFICATION CODE"
+        android:inputType="number"
+         />
+    <Button
+        android:id="@+id/user_btn_confirm_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingHorizontal="36dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btnviewall"
+        android:text="Confirm"
+        android:textColor="@color/colorWhite" />
+
+    <ProgressBar
+        android:id="@+id/user_phone_progressbar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:visibility="gone" />
+
+</LinearLayout>

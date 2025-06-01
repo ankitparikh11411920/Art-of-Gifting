@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Base application light theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#B00157B1</item>
+        <item name="colorPrimaryDark">#0157B1</item>
+        <item name="colorAccent">#000000</item>
+        <item name="backgroundcolor">#f0f0f0</item>
+        <item name="card_backgroundcolor">#B00157B1</item>
+        <item name="textcolor">#000000</item>
+        <item name="tintcolor">#0157B1</item>
+        <item name="buttoncolor">#B00157B1</item>
+
+    </style>
+</resources>

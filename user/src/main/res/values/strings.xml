@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Art Of Gifting</string>
+
+    <string name="Upload_Image_Text">Upload your profile Image</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+</resources>

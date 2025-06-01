@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cirimg_userprofile_raw_reviewlist"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/ic_person"
+            app:civ_border_color="@color/colorBlack"
+            app:civ_border_width="3dp" />
+
+        <TextView
+            android:id="@+id/tv_user_name_raw_reviewlist"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:padding="8dp"
+            android:text="Name"
+            android:textColor="@color/colorBlack"
+            android:textSize="21sp" />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_verified_purchase_raw_reviewlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:padding="8dp"
+        android:textSize="10sp"
+        android:text="Verified Purchase"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/colorGreen"
+        android:textStyle="bold|italic"
+        android:visibility="invisible" />
+    <RatingBar
+        android:id="@+id/ratingbar_raw_reviewlist"
+        android:elevation="3dp"
+        style="?attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:theme="@style/RatingBar"
+        android:layout_marginTop="4dp"
+        android:stepSize="1" />
+
+    <TextView
+        android:id="@+id/tv_comment_raw_reviewlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="Comment Here"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_date_raw_reviewlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="Date"
+        android:textSize="12sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="6dp"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_edit_raw_reviewlist"
+            android:visibility="gone"
+            android:background="@drawable/btn_shape"
+            android:layout_marginHorizontal="4dp"
+            android:text="Edit"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_delete_raw_reviewlist"
+            android:background="@drawable/btn_shape"
+            android:visibility="gone"
+            android:layout_marginHorizontal="4dp"
+            android:layout_height="wrap_content"
+            android:text="Delete"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorGrey"/>
+
+</LinearLayout>

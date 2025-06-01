@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border"
+    android:layout_margin="4dp"
+    android:padding="16dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/admin_imageview_orderimage_order_item"
+        android:layout_width="96dp"
+        android:src="@color/colorBlack"
+        android:layout_height="96dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/admin_tv_ordername_order_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="2dp"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/colorBlack"
+            android:text="Productname"/>
+
+        <TextView
+            android:id="@+id/admin_tv_ordered_by_order_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="2dp"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/colorBlack"
+            android:text="Ordered by"/>
+
+        <TextView
+            android:id="@+id/admin_tv_ordered_on_order_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="2dp"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/colorBlack"
+            android:text="Ordered on"/>
+
+        <TextView
+            android:id="@+id/admin_tv_order_qty_order_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="2dp"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/colorBlack"
+            android:text="Qty"/>
+
+        <TextView
+            android:id="@+id/admin_tv_order_total_order_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="2dp"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/colorBlack"
+            android:text="Order Total"/>
+
+    </LinearLayout>
+
+</LinearLayout>

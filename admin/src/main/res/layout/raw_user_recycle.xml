@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:id="@+id/admin_card_product_display"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="6dp"
+    android:layout_marginBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:weightSum="5">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/admin_user_image_disp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:civ_border_width="0.5dp"
+            app:civ_border_color="@color/colorwhite"
+            android:src="@color/colorAccent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/admin_user_name_disp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/textcolor"
+                android:textSize="18sp"
+                android:paddingLeft="17dp"
+                android:text="Name" />
+
+            <TextView
+                android:id="@+id/admin_user_total_orders_disp"
+                android:layout_width="match_parent"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/textcolor"
+                android:paddingLeft="17dp"
+                android:text="Name" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

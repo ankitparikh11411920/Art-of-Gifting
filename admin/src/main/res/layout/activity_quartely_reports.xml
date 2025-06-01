@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".QuartelyReportsActivity">
+
+    <include
+        android:id="@+id/admin_quarterly_reports_toolbar"
+        layout="@layout/admin_toolbar" />
+
+    <TextView
+        android:id="@+id/tv_q1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:padding="16dp"
+        android:paddingLeft="8dp"
+        android:text="Q1 2020 (Jan, Feb, Mar)"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="8dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/tv_q2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:padding="16dp"
+        android:paddingLeft="8dp"
+        android:text="Q2 2020 (Apr, May, Jun)"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="8dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/tv_q3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:padding="16dp"
+        android:paddingLeft="8dp"
+        android:text="Q3 2020 (Jul, Aug, Sept)"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="8dp"
+        android:background="@color/colorPrimaryDark" />
+    <TextView
+        android:id="@+id/tv_q4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:padding="16dp"
+        android:paddingLeft="8dp"
+        android:text="Q4 2020 (Oct, Nov, Dec)"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="8dp"
+        android:background="@color/colorPrimaryDark" />
+</LinearLayout>

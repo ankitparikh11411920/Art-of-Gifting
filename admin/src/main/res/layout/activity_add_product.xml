@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Add_Product">
+
+        <ImageView
+            android:id="@+id/admin_img_prod_img_add_product"
+            android:layout_width="144dp"
+            android:layout_height="144dp"
+            android:layout_gravity="center"
+            android:layout_marginVertical="10dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_add_a_photo" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/admin_edt_product_name_add_product"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="40dp"
+            app:errorEnabled="true"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/product_name"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/admin_edt_product_price_add_product"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="40dp"
+            app:errorEnabled="true"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/product_price"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/admin_edt_product_quantity_add_product"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="40dp"
+            app:errorEnabled="true"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/product_quantity"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/admin_edt_product_description_add_product"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="40dp"
+            app:errorEnabled="true"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/product_description"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/admin_spinner_category_name_add_product"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginVertical="10dp"
+            android:spinnerMode="dialog"
+            android:background="@drawable/custom_spinner"
+            android:layout_height="wrap_content"/>
+        <Spinner
+            android:id="@+id/admin_spinner_sub_category_name_add_product"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="40dp"
+            android:spinnerMode="dialog"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/custom_spinner"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_add_prod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/round_button"
+            android:layout_marginVertical="10dp"
+            android:textColor="@android:color/white"
+            android:text="Add Product"
+            android:padding="8dp"/>
+    </LinearLayout>
+</ScrollView>
